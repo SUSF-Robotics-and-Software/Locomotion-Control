@@ -6,7 +6,7 @@ from .calc_point_turn import calc_point_turn
 
 # Do Manoeuvre Control
 #
-#       __NOT YET IMPLEMENTED__
+#       __IMPLEMENTATION NOT COMPLETE__
 #
 #   Command actuators to respond to the given manoeuvre command.
 #

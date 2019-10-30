@@ -24,6 +24,9 @@ class LocoCtrl:
     from .get_act_telem import get_act_telem
     from .do_mnvr_ctrl import do_mnvr_ctrl
 
+    # Import public types
+    from .mnvr_cmd import MnvrCmd, MnvrType
+
     # Module Initialisation Function
     #
     #   Sets up initial state of the module by loading parameters.

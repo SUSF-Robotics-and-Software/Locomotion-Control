@@ -1,0 +1,86 @@
+// This set of Manoeuvre commands will be used to test LocoCtrl's repsonse to 
+// different inputs. Each command will be run in sequence, and the outputs will
+// be analysed to check they are performing correctly.
+//
+// This is an HJSON file, with comments.
+[
+    // NONE, a stop command
+    {
+        mnvr_id: 0,
+        mnvr_params: {}
+    },
+
+    // ---- SKID STEER COMMANDS ----
+
+    // No speed
+    {
+        mnvr_id: 1,
+        mnvr_params: {
+            rov_speed_mss_Lm: 0.0,
+            curv_m_Rb: 0.0,
+        }
+    },
+
+    // Nominal speed, forwards
+    {
+        mnvr_id: 1,
+        mnvr_params: {
+            rov_speed_mss_Lm: 0.3,
+            curv_m_Rb: 0.0,
+        }
+    },
+
+    // Nominal speed, wide left turn
+    {
+        mnvr_id: 1,
+        mnvr_params: {
+            rov_speed_mss_Lm: 0.3,
+            curv_m_Rb: 0.1,
+        }
+    },
+
+    // Nominal speed, tight left turn
+    {
+        mnvr_id: 1,
+        mnvr_params: {
+            rov_speed_mss_Lm: 0.3,
+            curv_m_Rb: 1.0,
+        }
+    },
+
+    // Nominal speed, impossible left turn
+    {
+        mnvr_id: 1,
+        mnvr_params: {
+            rov_speed_mss_Lm: 0.3,
+            curv_m_Rb: 1e6,
+        }
+    },
+
+    // Nominal speed, wide right turn
+    {
+        mnvr_id: 1,
+        mnvr_params: {
+            rov_speed_mss_Lm: 0.3,
+            curv_m_Rb: -0.1,
+        }
+    },
+
+    // Nominal speed, tight right turn
+    {
+        mnvr_id: 1,
+        mnvr_params: {
+            rov_speed_mss_Lm: 0.3,
+            curv_m_Rb: -1.0,
+        }
+    },
+
+    // Nominal speed, impossible right turn
+    {
+        mnvr_id: 1,
+        mnvr_params: {
+            rov_speed_mss_Lm: 0.3,
+            curv_m_Rb: -1e6,
+        }
+    },
+]

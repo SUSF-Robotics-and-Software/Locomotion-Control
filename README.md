@@ -1,5 +1,11 @@
 # Locomotion-Control
 
+## Non-Standard Dependencies
+
+These should be installed for your python version.
+
+`hjson`: Human-readable JSON, adds comments (!) to JSON
+
 ## Scripts
 
 `run_test.sh`: 
