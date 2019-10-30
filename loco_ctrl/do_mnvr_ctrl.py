@@ -15,8 +15,8 @@ from .calc_point_turn import calc_point_turn
 #       mnvr_cmd: Manoeuvre Command (see module spec)
 #
 #   Outputs:
-#       status_rpt:
-#           Control status report
+#       status_rpt: Status report dictionary, populated with error flags when
+#           appropriate
 def do_mnvr_ctrl(self, mnvr_cmd):
     
     # Initialise status report

@@ -10,7 +10,7 @@ from .constants import MnvrType
 class MnvrCmd:
     # Manoeuvre ID
     #
-    #   The type of manoeuvre to perform
+    #   The type of manoeuvre to perform, one of MnvrType.X.
     mnvr_id: MnvrType
 
     # Manoeuvre Parameters

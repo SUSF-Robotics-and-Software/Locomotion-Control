@@ -18,6 +18,10 @@ from collections import namedtuple
 #           Command the actuators to perform the given manoeuvre. mnvr_cmd must
 #           be valid as per the module spec. See function definition file for 
 #           more information.
+#
+#   Usage:
+#       LocoCtrl.get_act_telem shall be called in the sensing phase of the 
+#       software cycle and must be called before LocoCtrl.do_mnvr_ctrl.
 class LocoCtrl:
 
     # Import public functions
