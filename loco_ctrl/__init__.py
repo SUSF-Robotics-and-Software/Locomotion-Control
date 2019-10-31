@@ -35,6 +35,8 @@ class LocoCtrl:
     #
     #   Sets up initial state of the module by loading parameters.
     def __init__(self):
+        # TODO: Add mnvr specific params
+
         # Get the path to this file, since relative imports are messed up and 
         # are relative to the executing script's path, not the path of this file
         loco_ctrl_dir = os.path.dirname(os.path.realpath(__file__))
