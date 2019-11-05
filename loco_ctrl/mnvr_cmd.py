@@ -12,6 +12,8 @@ class MnvrCmd(command_primative):
     
     def __init__(self):
 
+        self.name = 'MnvrCmd'
+
         # Manoeuvre ID
         #
         #   The type of manoeuvre to perform, one of MnvrType.X.

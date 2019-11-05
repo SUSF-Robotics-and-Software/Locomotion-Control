@@ -2,5 +2,24 @@
 //
 // This is an HJSON file, with comments.
 {
-    "rover_configuration": "PHOBOS"
+    // Rover configuration for this parameter file
+    rover_configuratio: "PHOBOS_01",
+
+    // Steer Axis Positions
+    //  
+    //  The positions of the steer axes (the centre of rotation of the STR axis)
+    //  in the Rover Body frame. A NUM_STR_AXESx2 array with the first index 
+    //  being the wheel index, and the second index being 0 for x and 1 for y. 
+    //
+    //  Wheels are index [FL, FR, ML, MR, RL, RR]
+    //
+    //  Units: metres
+    //  Frame: Rover Body
+    str_axis_pos_m_Rb: [
+        [ 0.2,  0.1], 
+        [ 0.2, -0.1],
+        [ 0.0,  0.1], 
+        [ 0.0, -0.1], 
+        [-0.2,  0.1], 
+        [-0.2, -0.1]]
 }

@@ -12,6 +12,8 @@ class ActDems(command_primative):
 
     def __init__(self):
 
+        self.name = 'ActDems'
+
         # Drive Demand
         #   Unit:  PWM width
         #   Frame: N/A
