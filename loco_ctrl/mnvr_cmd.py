@@ -1,22 +1,23 @@
-from dataclasses import dataclass
 from typing import Dict
+from .CommsAndCommand.command import command_primative
 from .constants import MnvrType
 
-@dataclass
-class MnvrCmd:
+class MnvrCmd(command_primative):
     """
     Manoeuvre Command 
 
     Encapsulates a single manoeuvre command, identified by an ID (MnvrType.X) 
     and associated parameters.
     """
+    
+    def __init__(self):
 
-    # Manoeuvre ID
-    #
-    #   The type of manoeuvre to perform, one of MnvrType.X.
-    mnvr_id: MnvrType
+        # Manoeuvre ID
+        #
+        #   The type of manoeuvre to perform, one of MnvrType.X.
+        self.mnvr_id: MnvrType
 
-    # Manoeuvre Parameters
-    #
-    #   Dictionary of parameters for the given manoeuvre.
-    mnvr_params: Dict[str, float]
+        # Manoeuvre Parameters
+        #
+        #   Dictionary of parameters for the given manoeuvre.
+        self.mnvr_params: Dict[str, float]

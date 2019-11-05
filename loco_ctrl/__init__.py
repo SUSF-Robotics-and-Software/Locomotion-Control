@@ -1,5 +1,5 @@
 import os
-from .sparam.load_params import load_params_from_hjson 
+from .sparam import load_params
 from collections import namedtuple
 
 class LocoCtrl:
@@ -43,4 +43,5 @@ class LocoCtrl:
         loco_ctrl_dir = os.path.dirname(os.path.realpath(__file__))
 
         # Load the parameter file using sparam
-        self.params = load_params_from_hjson(os.path.join(loco_ctrl_dir, '../params/loco_ctrl.hjson'))
+        self.params = load_params.load_params_from_hjson(
+            os.path.join(loco_ctrl_dir, '../params/loco_ctrl.hjson'))

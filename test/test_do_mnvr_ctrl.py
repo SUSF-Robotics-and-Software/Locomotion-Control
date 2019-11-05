@@ -1,8 +1,8 @@
 import hjson
 import os
 
-from .. import LocoCtrl
-from ..mnvr_cmd import MnvrCmd, MnvrType
+from loco_ctrl import LocoCtrl
+from loco_ctrl.mnvr_cmd import MnvrCmd, MnvrType
 
 # Test the LocoCtrl module based on the test parameters
 def test_do_mnvr_ctrl():
@@ -21,7 +21,7 @@ def test_do_mnvr_ctrl():
     for cmd in test_cmds:
 
         # Parse the command
-        mnvr_cmd = MnvrCmd(MnvrType(cmd['mnvr_id']), cmd['mnvr_params'])
+        mnvr_cmd = MnvrCmd.from_structure(cmd)
 
         # Log the command issued, by printing the command type, followed the 
         # parameters passed in, or 'No parameters' if none exist

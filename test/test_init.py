@@ -1,4 +1,4 @@
-from .. import LocoCtrl
+from loco_ctrl import LocoCtrl
 
 # Test the LocoCtrl module based on the test parameters
 def test_init():
