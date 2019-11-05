@@ -48,8 +48,11 @@ name, and output any information in the report you feel is useful (see
 __Use of Parameters:__
 
 Your function should not use "magic numbers" at any point. Instead you should 
-define parameters in your specific parameter file, found at 
-`params/mnvr_[MNVR NAME].hjson`. For example:
+define parameters in the module's parameter file, stored at 
+`params/loco_ctrl.hjson`. This file should contain a selection of predefined 
+parameters. For now, define your own parameters in your specific manoeuvre
+object (this isn't normal but is how we will sort it while we have three 
+separate teams working).
 
 ```python
 # Bad: where does this number come from?
@@ -60,12 +63,6 @@ str_abs_pos_rad_Sk = 12 * rov_spd_mss_Lm
 str_abs_pos_rad_Sk =
     self.params.mnvr_skid_steer.important_constant * rov_spd_mss_Lm
 ```
-
-You should define your parameters in your own manoeuvre's file. Once the design 
-is complete these separate files will be combined into a single parameter file 
-(splitting at this stage is to avoid naming conflicts between teams). You can 
-use parameter already defined in the `loco_ctrl.hjson` file, and should copy 
-the documentation style used there.
 
 __Testing Your Implementation:__
 
