@@ -1,11 +1,11 @@
 from collections import namedtuple
 from .act_dems import ActDems
 
-def calc_ackerman(self, mnvr_params):
+def calc_ackermann(self, mnvr_params):
     """
-    Calculate Ackerman Demands
+    Calculate Ackermann Demands
     
-      Calculate demands for the ackerman manoeuvre.
+      Calculate demands for the ackermann manoeuvre.
     
       Inputs:
           self: LocoCtrl module state
@@ -25,6 +25,6 @@ def calc_ackerman(self, mnvr_params):
     # TODO: Your algorithm here
 
     # Construct namedtuple result
-    result = namedtuple('AckermanData', ['act_dems', 'status_rpt'])
+    result = namedtuple('AckermannData', ['act_dems', 'status_rpt'])
 
     return result(act_dems, status_rpt)
