@@ -2,12 +2,15 @@ from dataclasses import dataclass
 from typing import Dict
 from .constants import MnvrType
 
-# Manoeuvre Command 
-#
-#   Encapsulates a single manoeuvre command, identified by an ID (MnvrType.X) 
-#   and associated parameters.
 @dataclass
 class MnvrCmd:
+    """
+    Manoeuvre Command 
+
+    Encapsulates a single manoeuvre command, identified by an ID (MnvrType.X) 
+    and associated parameters.
+    """
+
     # Manoeuvre ID
     #
     #   The type of manoeuvre to perform, one of MnvrType.X.

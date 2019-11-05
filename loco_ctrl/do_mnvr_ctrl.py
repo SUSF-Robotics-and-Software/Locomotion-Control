@@ -4,20 +4,22 @@ from .calc_skid_steer import calc_skid_steer
 from .calc_ackerman import calc_ackerman
 from .calc_point_turn import calc_point_turn
 
-# Do Manoeuvre Control
-#
-#       __IMPLEMENTATION NOT COMPLETE__
-#
-#   Command actuators to respond to the given manoeuvre command.
-#
-#   Inputs:
-#       self: LocoCtrl module state
-#       mnvr_cmd: Manoeuvre Command (see module spec)
-#
-#   Outputs:
-#       status_rpt: Status report dictionary, populated with error flags when
-#           appropriate
 def do_mnvr_ctrl(self, mnvr_cmd):
+    """
+    Do Manoeuvre Control
+    
+          __IMPLEMENTATION NOT COMPLETE__
+    
+      Command actuators to respond to the given manoeuvre command.
+    
+      Inputs:
+          self: LocoCtrl module state
+          mnvr_cmd: Manoeuvre Command (see module spec)
+    
+      Outputs:
+          status_rpt: Status report dictionary, populated with error flags when
+              appropriate
+    """
     
     # Initialise status report
     status_rpt = {}

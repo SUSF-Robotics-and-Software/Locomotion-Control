@@ -1,0 +1,3 @@
+[submodule "loco_ctrl/sparam"]
+	path = loco_ctrl/sparam
+	url = https://github.com/SUSF-Robotics-and-Software/sparam.git

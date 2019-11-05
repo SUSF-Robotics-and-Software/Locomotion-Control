@@ -1,0 +1,6 @@
+// Module parameters for the LocoCtrl module.
+//
+// This is an HJSON file, with comments.
+{
+    "rover_configuration": "PHOBOS"
+}
