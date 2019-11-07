@@ -1,16 +1,17 @@
 from collections import namedtuple
 from act_dems import ActDems
 
+
 def calc_point_turn(self, mnvr_params):
     """
     Calculate Point Turn Demands
-    
+
       Calculate demands for the point turn manoeuvre.
-    
+
       Inputs:
           self: LocoCtrl module state
           mnvr_params: Dictionary of parameters for the manoeuvre, see docs/spec
-    
+
       Outputs:
           `namedtuple` of two members:
           act_dems: Actuator demands, an instance of ActDems
