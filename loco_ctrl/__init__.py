@@ -1,5 +1,5 @@
 import os
-from .sparam import load_params
+from sparam import load_params
 from collections import namedtuple
 
 class LocoCtrl:
