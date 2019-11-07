@@ -1,8 +1,8 @@
 from typing import Dict
-from .CommsAndCommand.command import command_primative
-from .constants import MnvrType
+from CommsAndCommand.command import command_primitive
+from constants import MnvrType
 
-class MnvrCmd(command_primative):
+class MnvrCmd(command_primitive):
     """
     Manoeuvre Command 
 

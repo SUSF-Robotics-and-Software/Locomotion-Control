@@ -27,11 +27,11 @@ class LocoCtrl:
     """
     
     # Import public functions
-    from .get_act_telem import get_act_telem
-    from .do_mnvr_ctrl import do_mnvr_ctrl
+    from get_act_telem import get_act_telem
+    from do_mnvr_ctrl import do_mnvr_ctrl
 
     # Import public types
-    from .mnvr_cmd import MnvrCmd, MnvrType
+    from mnvr_cmd import MnvrCmd, MnvrType
 
     # Module Initialisation Function
     #

@@ -1,7 +1,7 @@
 from typing import List
-from .CommsAndCommand.command import command_primative
+from CommsAndCommand.command import command_primitive
 
-class ActDems(command_primative):
+class ActDems(command_primitive):
     """
     Actuator Demands
     

@@ -1,5 +1,5 @@
 from collections import namedtuple
-from .act_dems import ActDems
+from act_dems import ActDems
 
 def calc_ackermann(self, mnvr_params):
     """
