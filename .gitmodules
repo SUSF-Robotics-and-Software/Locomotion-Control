@@ -1,7 +1,0 @@
-[submodule "loco_ctrl/sparam"]
-	path = loco_ctrl/sparam
-	url = https://github.com/SUSF-Robotics-and-Software/sparam.git
-
-[submodule "loco_ctrl/CommsAndCommand"]
-	path = loco_ctrl/CommsAndCommand
-	url = https://github.com/SUSF-Robotics-and-Software/CommsAndCommand.git
