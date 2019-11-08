@@ -2,7 +2,6 @@ import os
 from sparam import load_params
 from collections import namedtuple
 
-
 class LocoCtrl:
     """
         Perform locomotion control, converting from high level manoeuvre
@@ -25,11 +24,11 @@ class LocoCtrl:
     """
 
     # Import public functions
-    from get_act_telem import get_act_telem
-    from do_mnvr_ctrl import do_mnvr_ctrl
+    from .get_act_telem import get_act_telem
+    from .do_mnvr_ctrl import do_mnvr_ctrl
 
     # Import public types
-    from mnvr_cmd import MnvrCmd, MnvrType
+    from .mnvr_cmd import MnvrCmd, MnvrType
 
     # Module Initialisation Function
     #

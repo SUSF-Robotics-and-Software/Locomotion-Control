@@ -1,4 +1,4 @@
-from loco_ctrl import LocoCtrl
+from LocomotionControl.loco_ctrl import LocoCtrl
 
 # Test the LocoCtrl module based on the test parameters
 def test_get_act_telem():
