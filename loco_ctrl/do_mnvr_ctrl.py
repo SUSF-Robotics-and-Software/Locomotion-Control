@@ -1,8 +1,8 @@
-from constants import MnvrType
-from act_dems import ActDems
-from calc_skid_steer import calc_skid_steer
-from calc_ackermann import calc_ackermann
-from calc_point_turn import calc_point_turn
+from .constants import MnvrType
+from .act_dems import ActDems
+from .calc_skid_steer import calc_skid_steer
+from .calc_ackermann import calc_ackermann
+from .calc_point_turn import calc_point_turn
 
 
 def do_mnvr_ctrl(self, mnvr_cmd):
@@ -47,7 +47,7 @@ def do_mnvr_ctrl(self, mnvr_cmd):
     elif (mnvr_cmd.mnvr_id == MnvrType.ACKERMAN):
         # Call the Ackerman calculation function, which returns a named tuple 
         # with actuator demands and status report content
-        ackerman_data = calc_ackerman(self, mnvr_cmd.mnvr_params)
+        ackerman_data = calc_ackermann(self, mnvr_cmd.mnvr_params)
 
         # Add the skid steer report to the function status report
         status_rpt.update(ackerman_data.status_rpt)

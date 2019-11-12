@@ -1,6 +1,6 @@
 from typing import Dict
 from CommsAndCommand.command import command_primitive
-from constants import MnvrType
+from .constants import MnvrType
 
 class MnvrCmd(command_primitive):
     """
