@@ -23,9 +23,8 @@ def calc_skid_steer(self, mnvr_params):
     status_rpt = {}
 
     # TODO: Your algorithm here
-    # ok bddy
-    # Eashan's line 27
-    # yaseens line 27
+
+
     # Construct namedtuple result
     result = namedtuple('SkidSteerData', ['act_dems', 'status_rpt'])
 
