@@ -1,5 +1,7 @@
-from collections import namedtuple
+# from collections import namedtuple
+from CommsAndCommand import command
 from .act_dems import ActDems
+from .temp_commands import *
 
 def calc_skid_steer(self, mnvr_params):
     """
@@ -19,13 +21,16 @@ def calc_skid_steer(self, mnvr_params):
     """
     
     # Initialise actuator demands to stopping and empty status report
-    act_dems = ActDems()
-    status_rpt = {}
+    # act_dems = ActDems()
+    # status_rpt = {}
 
     # TODO: Your algorithm here
 
 
-    # Construct namedtuple result
-    result = namedtuple('SkidSteerData', ['act_dems', 'status_rpt'])
 
-    return result(act_dems, status_rpt)
+    wheel_1_speed.value = None
+    wheel_2_speed.value = None
+
+    # Construct namedtuple result
+    # result = namedtuple('SkidSteerData', ['act_dems', 'status_rpt'])
+    # return result(act_dems, status_rpt)

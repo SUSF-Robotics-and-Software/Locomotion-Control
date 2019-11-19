@@ -76,4 +76,7 @@ def do_mnvr_ctrl(self, mnvr_cmd):
     # TODO
     # self.actuate(act_dems)
 
+    # transmit control state
+    # network.send(wheel_set)
+
     return status_rpt
