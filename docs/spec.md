@@ -102,7 +102,7 @@ The below list shows which parameters shall be present in the `mnvr_cmd.params`
 
 ```python
 # Rover Speed (speed of the Rover Body frame over the Local Map frame)
-#   Unit:  metres / (second^2)
+#   Unit:  metres / (second)
 #   Frame: Local Map
 #
 #   Required for: Skid steering, Ackerman
