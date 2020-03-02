@@ -26,6 +26,9 @@ class LocoCtrl:
     # Import public functions
     from .get_act_telem import get_act_telem
     from .do_mnvr_ctrl import do_mnvr_ctrl
+    from .arch import create_arch
+    from .arch import write_arch
+    from .arch import close_arch
 
     # Import public types
     from .mnvr_cmd import MnvrCmd, MnvrType

@@ -28,6 +28,9 @@ def do_mnvr_ctrl(self, mnvr_cmd):
     # Initialise actuator demands, will be initialised as stopping
     act_dems = ActDems()
 
+    # Save the mnvr_cmd so it can be archived later
+    self.mnvr_cmd = mnvr_cmd
+
     # If no manouvre demanded set all actuators to STOPPED
     if (mnvr_cmd.mnvr_id == MnvrType.NONE):
         # Nothing to do, actuator demands are initialised to zero
