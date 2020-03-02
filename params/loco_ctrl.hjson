@@ -3,7 +3,7 @@
 // This is an HJSON file, with comments.
 {
     // Rover configuration for this parameter file
-    rover_configuratio: "PHOBOS_01",
+    rover_configuration: "PHOBOS_01",
 
     // Steer Axis Positions
     //  

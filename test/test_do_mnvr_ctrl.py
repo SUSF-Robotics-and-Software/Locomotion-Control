@@ -1,8 +1,8 @@
 import hjson
 import os
 
-from loco_ctrl import LocoCtrl
-from loco_ctrl.mnvr_cmd import MnvrCmd, MnvrType
+from LocomotionControl.loco_ctrl import LocoCtrl
+from LocomotionControl.loco_ctrl.mnvr_cmd import MnvrCmd, MnvrType
 
 # Test the LocoCtrl module based on the test parameters
 def test_do_mnvr_ctrl():
