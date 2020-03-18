@@ -3,7 +3,7 @@ from .act_dems import ActDems
 from math import pi, tan, isclose, sqrt 
 
 
-status_rpt = {"infinite_radius" : 0, "radius_inside_rover" : 0, "motor_angle_inner_exceeded" : 0, "motor_angle_outer_exceeded" : 0, "act_speed_limit" : 0, "min_rover_speed" : 0}
+status_rpt = {"act_speed_limit" : 0, "min_rover_speed" : 0}
 motor_angle_r = [] #Array containing angle for 6 wheels(radians)
 rover_width_m = 0.2 #Width from center to side(m)
 rover_length_m = 0.4 #Length from center to front(m)
@@ -45,8 +45,11 @@ def calc_point_turn(self, mnvr_params):
         # Default calculation 
         motor_rot_speed_rads = rov_circle_circ_m * mnvr_params.rov_rate_rads_Rb /wheel_radius_m
 
-        return motor_rot_speed_rads
+        if (abs(mnvr_params.rov_rate_rads_Rb) > motor_max_speed_rads ):
+            motor_rot_speed_rads = motor_max_speed_rads
+            status_rpt["act_speed_limit"] = 1
 
+        return motor_rot_speed_rads
 
 
 
